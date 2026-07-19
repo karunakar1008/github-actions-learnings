@@ -1,0 +1,2 @@
+- Install required externsiosn to work with git actions
+    - GitHub Actions
