@@ -47,7 +47,7 @@ jobs:
         uses: Azure/deployment-what-if-action@v1.0.0
         with:
           subscription: ${{ secrets.SUBSCRIPTION_ID  }} # Subscription ID
-          resourceGroup: $RESOURCE_GROUP # Resource group name
+          resourceGroup: ${{ env.RESOURCE_GROUP }} # Resource group name
           templateFile: 01-bicep-webapp/webapp-linux.bicep # ARM template or Bicep file
           # parametersFile: # optional # Parameters file for the ARM template or Bicep
           # Additional parameters to be applied on the ARM template or Bicep. Multiple parameters should be separated by spaces.
