@@ -1,0 +1,61 @@
+# Visual Studio / .NET
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+out/
+build/
+artifacts/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+
+# Publish
+publish/
+
+# ASP.NET
+node_modules/
+wwwroot/dist/
+
+# VS Code settings
+.vscode/
+
+# Rider/IDE
+.idea/
+
+# Project files
+project.lock.json
+project.fragment.lock.json
+
+# Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.temp
