@@ -41,7 +41,7 @@ jobs:
           # Specify the script here
           inlineScript: |
             az version
-            az group create -n $RESOURCE_GROUP -l eastus
+            az group create -n $RESOURCE_GROUP -l centalindia
 
       - name: Preview Changes from Bicep
         uses: Azure/deployment-what-if-action@v1.0.0
@@ -78,7 +78,7 @@ jobs:
           # Specify the script here
           inlineScript: |
             az version
-            az group create -n $RESOURCE_GROUP -l eastus
+            az group create -n $RESOURCE_GROUP -l centalindia
 
       - name: Deploy Bicep to Azure
         uses: azure/arm-deploy@v1
