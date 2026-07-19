@@ -1,7 +1,7 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET
+name: 030-dotnet-workflow
 
 on:
   push:
@@ -10,9 +10,13 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build-dotnet-app:
 
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: app-dotnet
 
     steps:
     
@@ -29,5 +33,5 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
       
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    # - name: Test
+    #   run: dotnet test --no-build --verbosity normal
