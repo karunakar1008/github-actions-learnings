@@ -6,9 +6,12 @@ name: 030-dotnet-workflow
 on:
   push:
     branches: none
-    
+
   pull_request:
-    branches: [ "main" ]
+    branches: none
+    
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build-dotnet-app:
