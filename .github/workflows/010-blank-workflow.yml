@@ -6,7 +6,7 @@ name: 010-blank-workflow
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: main # [ none ]
+    branches: none # [ none ]
 
   pull_request:
     branches: main # [ none ]
