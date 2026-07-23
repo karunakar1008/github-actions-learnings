@@ -20,7 +20,7 @@
 name: 031-build-deploy-webapp-to-azure
 
 env:
-  AZURE_WEBAPP_NAME: appservice-enis-123    # set this to the name of your Azure Web App
+  AZURE_WEBAPP_NAME: demowebappkarunaka1234    # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '9.0.x'                 # set this to the .NET Core version to use
 
