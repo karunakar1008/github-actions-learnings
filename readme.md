@@ -1,5 +1,10 @@
 - Install required externsiosn to work with git actions
     - GitHub Actions
+
+-- publish web app to azure
+  - Create new in git. go to Secrets and Variables-> Actions -> new repository secret ->Name(AZURE_WEBAPP_PUBLISH_PROFILE) -> Content should be the publish profile
+
+
 -- Create service principle
 Prerequites: Create a Service Principal:
 
