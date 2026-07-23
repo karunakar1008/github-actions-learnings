@@ -1,4 +1,4 @@
-name: Docker
+name: 052-docker-ghcr-workflow
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -14,7 +14,9 @@ on:
     tags: none # [ 'v*.*.*' ]
   pull_request:
     branches: none # [ main ]
+
   workflow_dispatch:
+    
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
