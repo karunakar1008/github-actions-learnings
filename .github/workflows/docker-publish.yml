@@ -6,21 +6,21 @@ name: Docker
 # documentation.
 
 on:
-  schedule:
-    - cron: '37 6 * * *'
+  # schedule:
+  #   - cron: '37 6 * * *' # Run at 6:37 AM UTC every day  
   push:
-    branches: [ "main" ]
+    branches: none # [ main ]
     # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
+    tags: none # [ 'v*.*.*' ]
   pull_request:
-    branches: [ "main" ]
+    branches: none # [ main ]
 
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
-
+  IMAGE_NAME: karunakar1008/github-actions-learnings
+  IMAGE_TAG: 1.0.${{ github.run_number }}
 
 jobs:
   build:
@@ -75,9 +75,9 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
         with:
-          context: .
+          context: app-dotnet
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }} # ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
@@ -91,7 +91,7 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         env:
           # https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-an-intermediate-environment-variable
-          TAGS: ${{ steps.meta.outputs.tags }}
+          TAGS: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
           DIGEST: ${{ steps.build-and-push.outputs.digest }}
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
