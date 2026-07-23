@@ -3,6 +3,7 @@ name: 080-resusable-workflow-caller
 on:
   push:
     branches: none # [ main ]
+
   pull_request:
     branches: none # [ main ]
 
@@ -11,14 +12,14 @@ on:
 
 jobs:
   call-workflow-A:
-    uses: karunakar1008/github-actions-learnings/blob/main/.github/workflows/080-reusable-workflow-called.yml@main
+    uses: karunakar1008/github-actions-learnings/.github/workflows/080-reusable-workflow-called.yml@main
     with:
       username: Karunakar
     secrets:
       token: ${{ secrets.TOKEN }}
 
   call-workflow-B:
-    uses: karunakar1008/github-actions-learnings/blob/main/.github/workflows/080-reusable-workflow-called.yml@main
+    uses: karunakar1008/github-actions-learnings/.github/workflows/080-reusable-workflow-called.yml@main
     with:
       username: Bhogyari
     secrets:
