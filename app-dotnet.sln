@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app-dotnet", "app-dotnet\app-dotnet.csproj", "{37876DCD-2FF4-4C16-B487-54D099E6255B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend_api", "backend_api", "{0DBBB92B-E9C1-4326-1190-FB1105D89267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend_api_csharp", "backend_api\backend_api_csharp\backend_api_csharp.csproj", "{818DF036-9D2E-4C36-8269-7E5515114781}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,23 @@ Global
 		{37876DCD-2FF4-4C16-B487-54D099E6255B}.Release|x64.Build.0 = Release|Any CPU
 		{37876DCD-2FF4-4C16-B487-54D099E6255B}.Release|x86.ActiveCfg = Release|Any CPU
 		{37876DCD-2FF4-4C16-B487-54D099E6255B}.Release|x86.Build.0 = Release|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Debug|x64.Build.0 = Debug|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Debug|x86.Build.0 = Debug|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Release|x64.ActiveCfg = Release|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Release|x64.Build.0 = Release|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Release|x86.ActiveCfg = Release|Any CPU
+		{818DF036-9D2E-4C36-8269-7E5515114781}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{818DF036-9D2E-4C36-8269-7E5515114781} = {0DBBB92B-E9C1-4326-1190-FB1105D89267}
 	EndGlobalSection
 EndGlobal
