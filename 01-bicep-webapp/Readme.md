@@ -10,6 +10,7 @@ az deployment group what-if --resource-group rg-bicep-webapp-013 \
 az deployment group create --resource-group rg-bicep-webapp-013 \
    --template-file webapp-linux.bicep \
    --parameters webAppName='bicep-013'
+   
 More templates are available here: https://github.com/Azure/bicep/blob/main/docs/examples/
 
 

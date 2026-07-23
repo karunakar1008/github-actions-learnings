@@ -26,3 +26,5 @@ output:
 }
 More resources:
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-github-actions?tabs=CLI
+
+-- Crate New repository secret with name AZURE_CREDENTIALS and content should be the above json generated when we a Service Principal
