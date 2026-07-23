@@ -30,3 +30,6 @@ az containerapp show `
                 --name $CONTAINERAPPS_APP `
                 --resource-group $RESOURCE_GROUP `
                 --query properties.configuration.ingress.fqdn
+
+
+https://github.com/HoussemDellai/aca-course/blob/main/.github/workflows/azure-container-apps-ci-cd.yml
